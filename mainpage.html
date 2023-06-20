@@ -14,6 +14,9 @@
     <a href="#"><i class="fa fa-instagram"></i></a>
     <a href="#"><i class="fa fa-twitter"></i></a>
   </div>
+  <audio id="song" autoplay>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
   <style>
     @font-face{
       font-family: "Times New Roman";
@@ -46,6 +49,12 @@
     }
   </style>
   <script src="script.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded',function(){
+      var audio = document.getElementById('song');
+      audio.play();
+    });
+  </script>
   <script>
     // Fetch the name from the URL parameters and display it
     var urlParams = new URLSearchParams(window.location.search);
