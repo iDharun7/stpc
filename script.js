@@ -7,5 +7,5 @@ function handleSubmit(event) {
   var email = document.getElementById('email').value;
 
   // Redirect to the next page
-  window.location.href = 'mainpage.html?' + 'name=' + name + '&phoneNumber=' + phoneNumber + '&email=' + email;
+  window.location.href = 'mainpage.html?';
 }
